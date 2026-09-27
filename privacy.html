@@ -1,38 +1,50 @@
 <!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KaçGün - Gizlilik Politikası</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,sans-serif;background:#1a0a2e;color:#e0e0e0;line-height:1.7;padding:20px}
-.container{max-width:700px;margin:0 auto;padding:20px}
-h1{color:#fff;font-size:28px;margin-bottom:8px}
-h2{color:#c084fc;font-size:20px;margin:28px 0 12px}
-p{margin-bottom:14px;font-size:15px}
-.badge{display:inline-block;background:#7c3aed;color:#fff;padding:4px 12px;border-radius:20px;font-size:13px;margin-bottom:20px}
-.updated{color:#999;font-size:13px;margin-bottom:30px}
-a{color:#c084fc}
-</style>
-</head>
-<body>
-<div class="container">
-<h1>KaçGün</h1>
-<span class="badge">Gizlilik Politikası</span>
-<p class="updated">Son güncelleme: 20 Mart 2026</p>
-<h2>1. Toplanan Veriler</h2>
-<p>KaçGün uygulaması kişisel verilerinizi sunucularımıza göndermez. Tüm verileriniz yalnızca cihazınızda yerel olarak saklanır.</p>
-<h2>2. Veri Paylaşımı</h2>
-<p>Verileriniz üçüncü taraflarla paylaşılmaz. Uygulama herhangi bir analitik, reklam veya takip SDK kullanmaz.</p>
-<h2>3. Veri Güvenliği</h2>
-<p>Verileriniz cihazınızın yerel depolama alanında tutulur ve iOS güvenlik mekanizmaları tarafından korunur.</p>
-<h2>4. Veri Silme</h2>
-<p>Ayarlar ekranındaki "Tüm Verileri Sil" butonu ile tüm verilerinizi kalıcı olarak silebilirsiniz.</p>
-<h2>5. Çocukların Gizliliği</h2>
-<p>Uygulamamız 13 yaş altı çocuklara yönelik değildir.</p>
-<h2>6. İletişim</h2>
-<p><a href="mailto:dogac1998@gmail.com">dogac1998@gmail.com</a></p>
-</div>
-</body>
-</html>
+<style>body{font-family:-apple-system,system-ui,sans-serif;max-width:760px;margin:0 auto;padding:24px 16px;line-height:1.6;color:#1A1040}h1{font-size:28px}h2{font-size:19px;margin-top:28px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #ccc;padding:6px;text-align:left;vertical-align:top}</style>
+</head><body>
+<h1>KaçGün Gizlilik Politikası</h1>
+<p>Son güncelleme: 27 Eylül 2026</p>
+
+<h2>1. Özet</h2>
+<ul>
+<li>KaçGün'de <strong>hesap yoktur</strong>; ad, e-posta veya telefon numarası istemeyiz.</li>
+<li>Kartlarınız, serileriniz, günlükleriniz, notlarınız, görevleriniz, su kayıtlarınız ve <strong>sağlık / adet döngüsü verileriniz yalnızca cihazınızda</strong> saklanır ve sunucularımıza gönderilmez.</li>
+<li>Uygulamada <strong>reklam yoktur</strong>, sizi uygulamalar ve web siteleri arasında <strong>takip etmeyiz</strong> (izleme / tracking yok).</li>
+<li>Yalnızca iki üçüncü taraf hizmeti kullanırız: çökme ve performans tanısı için <strong>Sentry</strong>, satın alma doğrulaması için <strong>RevenueCat</strong>. Ödemeleri <strong>Apple</strong> işler.</li>
+</ul>
+
+<h2>2. Cihazınızda saklanan veriler</h2>
+<p>Uygulamaya girdiğiniz tüm içerik (kart başlıkları, başlangıç tarihleri, check-in'ler, günlükler, kriz/zor an notları, bütçe hedefleri, su ve adet döngüsü kayıtları, ayarlar) cihazınızın yerel deposunda tutulur. Ana ekran widget'ı için seçtiğiniz kartların özeti, yine cihazınızda, uygulama ile widget arasında paylaşılan bir App Group alanına yazılır.</p>
+<p><strong>iCloud / cihaz yedeği:</strong> Bu veriler, cihazınızın iCloud veya bilgisayar (Finder) yedeğine dahil edilir; böylece yeni telefona geçtiğinizde geri gelir. Yedekleme Apple tarafından, Apple hesabınızın ayarlarına göre yapılır; biz bu yedeklere erişemeyiz.</p>
+<p>Bütçe hedefine eklediğiniz fotoğraf, iOS'un sistem seçicisi ile yalnızca seçtiğiniz görsele erişilerek cihazda saklanır; fotoğraf arşivinizin tamamına erişim istenmez.</p>
+<p>Hatırlatma ve geri sayım bildirimleri cihazda oluşturulur. Bildirim metni (ör. geri sayım kartı adı) kilit ekranında görünebilir; bunu iOS Ayarlar &gt; Bildirimler'den yönetebilirsiniz.</p>
+
+<h2>3. Sentry (çökme ve performans tanısı)</h2>
+<p>Uygulama çöktüğünde veya bir hata oluştuğunda, sorunu düzeltebilmek için Sentry'ye (Functional Software, Inc., ABD; veriler ABD bölgesinde işlenir) şu teknik bilgiler gönderilir:</p>
+<ul>
+<li>Hata türü ve yığın izi (stack trace), uygulama sürümü, iOS sürümü, cihaz modeli;</li>
+<li>Örneklenmiş performans ölçümleri (işlemlerin yaklaşık %20'si) ve oturum sağlığı (çökme olmadan tamamlanan oturum oranı);</li>
+<li>Cihazınızın dil/bölge ayarından türetilen ülke kodu ve saat dilimi.</li>
+</ul>
+<p><strong>Gönderilmeyenler:</strong> kart adlarınız, günlük/not metinleriniz, sağlık ve adet verileriniz, ekran görüntüsü ve kişisel tanımlayıcılar. Sentry kişisel veri gönderimi kapalıdır (sendDefaultPii kapalı) ve kayıt okuma hatalarında yalnızca alan adları (içerik değil) raporlanır. Sentry bu teknik kayıtları kendi veri saklama politikasına göre sınırlı bir süre tutar ve sonra siler.</p>
+
+<h2>4. RevenueCat ve Apple (satın almalar)</h2>
+<p>Premium satın alımlarını doğrulamak ve geri yüklemek için RevenueCat (RevenueCat, Inc., ABD) kullanılır. RevenueCat, SDK'nın rastgele oluşturduğu <strong>anonim bir kullanıcı kimliği</strong>, cihazınızın satıcı tanımlayıcısını (IDFV; RevenueCat SDK'sı her istekle gönderir, reklam kimliği IDFA değildir ve takip için kullanılmaz), Apple'dan gelen satın alma/abonelik kayıtları (ürün, tarih, deneme ve yenileme durumu), mağaza ülkesi/para birimi ile uygulama ve cihaz sürüm bilgilerini işler. Ad, e-posta veya uygulama içeriğiniz RevenueCat'e gönderilmez.</p>
+<p>Ödemeler, iadeler ve abonelik yönetimi tamamen <strong>Apple</strong> tarafından Apple hesabınız üzerinden yapılır; kart bilgilerinizi görmeyiz.</p>
+
+<h2>5. Paylaşım</h2>
+<p>Başarı kartı, rapor veya dışa aktarma gibi paylaşımlar yalnızca siz "Paylaş"a dokunduğunuzda iOS paylaşım menüsü ile ve sizin seçtiğiniz hedefe gönderilir.</p>
+
+<h2>6. Veri silme</h2>
+<p>Ayarlar &gt; <strong>Verileri Sil</strong> ile uygulamadaki tüm verileri cihazınızdan kalıcı olarak silebilirsiniz; uygulamayı silmek de yerel verileri kaldırır (iCloud yedeklerinizi Apple hesabınızdan yönetebilirsiniz). Sentry veya RevenueCat'te tutulan teknik kayıtların silinmesini aşağıdaki adrese yazarak isteyebilirsiniz; satın alma kayıtları Apple'ın yasal saklama yükümlülüklerine tabidir.</p>
+
+<h2>7. Haklarınız</h2>
+<p>KVKK ve GDPR kapsamındaki erişim, düzeltme, silme ve itiraz haklarınız için bize e-posta ile ulaşabilirsiniz. Hesap sistemimiz olmadığından, cihazınızdaki veriler üzerinde tam kontrol sizdedir.</p>
+
+<h2>8. Çocuklar</h2>
+<p>KaçGün 13 yaş altındaki çocuklara yönelik değildir ve bilerek çocuklardan veri toplamaz.</p>
+
+<h2>9. Değişiklikler ve iletişim</h2>
+<p>Bu politikayı güncellersek yeni tarihi bu sayfada yayınlarız. İletişim: <a href="mailto:dogac1998@gmail.com">dogac1998@gmail.com</a></p>
+</body></html>
