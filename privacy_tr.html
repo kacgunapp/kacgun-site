@@ -4,14 +4,14 @@
 <style>body{font-family:-apple-system,system-ui,sans-serif;max-width:760px;margin:0 auto;padding:24px 16px;line-height:1.6;color:#1A1040}h1{font-size:28px}h2{font-size:19px;margin-top:28px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #ccc;padding:6px;text-align:left;vertical-align:top}</style>
 </head><body>
 <h1>KaçGün Gizlilik Politikası</h1>
-<p>Son güncelleme: 27 Eylül 2026</p>
+<p>Son güncelleme: 15 Ekim 2026</p>
 
 <h2>1. Özet</h2>
 <ul>
 <li>KaçGün'de <strong>hesap yoktur</strong>; ad, e-posta veya telefon numarası istemeyiz.</li>
 <li>Kartlarınız, serileriniz, günlükleriniz, notlarınız, görevleriniz, su kayıtlarınız ve <strong>sağlık / adet döngüsü verileriniz yalnızca cihazınızda</strong> saklanır ve sunucularımıza gönderilmez.</li>
 <li>Uygulamada <strong>reklam yoktur</strong>, sizi uygulamalar ve web siteleri arasında <strong>takip etmeyiz</strong> (izleme / tracking yok).</li>
-<li>Yalnızca iki üçüncü taraf hizmeti kullanırız: çökme ve performans tanısı için <strong>Sentry</strong>, satın alma doğrulaması için <strong>RevenueCat</strong>. Ödemeleri <strong>Apple</strong> işler.</li>
+<li>Üç üçüncü taraf hizmeti kullanırız: çökme ve performans tanısı için <strong>Sentry</strong>, satın alma doğrulaması için <strong>RevenueCat</strong>, anonim ürün analitiği için <strong>PostHog</strong> (AB bulutu). Ödemeleri <strong>Apple</strong> işler.</li>
 </ul>
 
 <h2>2. Cihazınızda saklanan veriler</h2>
@@ -29,22 +29,29 @@
 </ul>
 <p><strong>Gönderilmeyenler:</strong> kart adlarınız, günlük/not metinleriniz, sağlık ve adet verileriniz, ekran görüntüsü ve kişisel tanımlayıcılar. Sentry kişisel veri gönderimi kapalıdır (sendDefaultPii kapalı) ve kayıt okuma hatalarında yalnızca alan adları (içerik değil) raporlanır. Sentry bu teknik kayıtları kendi veri saklama politikasına göre sınırlı bir süre tutar ve sonra siler.</p>
 
-<h2>4. RevenueCat ve Apple (satın almalar)</h2>
-<p>Premium satın alımlarını doğrulamak ve geri yüklemek için RevenueCat (RevenueCat, Inc., ABD) kullanılır. RevenueCat, SDK'nın rastgele oluşturduğu <strong>anonim bir kullanıcı kimliği</strong>, cihazınızın satıcı tanımlayıcısını (IDFV; RevenueCat SDK'sı her istekle gönderir, reklam kimliği IDFA değildir ve takip için kullanılmaz), Apple'dan gelen satın alma/abonelik kayıtları (ürün, tarih, deneme ve yenileme durumu), mağaza ülkesi/para birimi ile uygulama ve cihaz sürüm bilgilerini işler. Ad, e-posta veya uygulama içeriğiniz RevenueCat'e gönderilmez.</p>
+<h2>4. PostHog (anonim ürün analitiği)</h2>
+<p>Uygulamanın hangi bölümlerinin kullanıldığını anlayıp geliştirmek için <strong>PostHog</strong> (PostHog Inc.; <strong>AB bulutu</strong>, veriler Avrupa Birliği'nde — Frankfurt, Almanya — barındırılır) ile anonim ürün analitiği yaparız. Amaç yalnızca <strong>ürün analitiği</strong>dir; reklam, profil çıkarma veya takip (tracking) için kullanılmaz ve üçüncü kişilere satılmaz.</p>
+<p><strong>Gönderilen olaylar</strong> (yalnızca bunlar): uygulamanın açılması; ilk kullanım adımları (karşılama, kart türü seçimi, ilk kart formu, ilk kartın kaydı); kart oluşturma (yalnızca kategori türü, ör. "sigara", ve uygulama dili); check-in kaydı (yalnızca kaydedildiği bilgisi); Premium ekranının görüntülenmesi (hangi ekrandan açıldığı), paket seçimi, satın alma başlatma ve geri yükleme sonucu (ömür boyu / yıllık / aylık); dil değiştirme (yeni dil kodu); widget'ın eklenmesi. Her olayla birlikte uygulama ve iOS sürümü, cihaz türü/modeli, dil ve saat dilimi gibi teknik bilgiler gider.</p>
+<p><strong>Kimlik:</strong> PostHog uygulamada rastgele, anonim bir kimlik oluşturur; ad, e-posta veya telefon ile ilişkilendirilmez. Satın alma analizleri için aynı anonim kimlik RevenueCat'e de iletilir (bkz. 5. bölüm).</p>
+<p><strong>Gönderilmeyenler:</strong> kart adları ve başlıkları, günlük/not/kriz metinleri, check-in ruh hali ve notları, sağlık ve adet verileri, kişisel tanımlayıcılar, cihaz adı, reklam kimliği (IDFA) ve konum. Oturum kaydı (session replay), ekran dokunuşlarının otomatik kaydı ve IP'den konum çıkarma kapalıdır.</p>
+<p>Hukuki dayanak: ürünü iyileştirmeye yönelik meşru menfaat (KVKK m.5/2-f, GDPR m.6/1-f). İtiraz ve silme taleplerinizi 10. bölümdeki adrese iletebilirsiniz.</p>
+
+<h2>5. RevenueCat ve Apple (satın almalar)</h2>
+<p>Premium satın alımlarını doğrulamak ve geri yüklemek için RevenueCat (RevenueCat, Inc., ABD) kullanılır. RevenueCat, SDK'nın rastgele oluşturduğu <strong>anonim bir kullanıcı kimliği</strong>, cihazınızın satıcı tanımlayıcısını (IDFV; RevenueCat SDK'sı her istekle gönderir, reklam kimliği IDFA değildir ve takip için kullanılmaz), Apple'dan gelen satın alma/abonelik kayıtları (ürün, tarih, deneme ve yenileme durumu), mağaza ülkesi/para birimi ile uygulama ve cihaz sürüm bilgilerini işler. Ayrıca PostHog'un oluşturduğu anonim analitik kimliği RevenueCat'e bir öznitelik (<code>$posthogUserId</code>) olarak yazılır. Ad, e-posta veya uygulama içeriğiniz RevenueCat'e gönderilmez.</p>
 <p>Ödemeler, iadeler ve abonelik yönetimi tamamen <strong>Apple</strong> tarafından Apple hesabınız üzerinden yapılır; kart bilgilerinizi görmeyiz.</p>
 
-<h2>5. Paylaşım</h2>
+<h2>6. Paylaşım</h2>
 <p>Başarı kartı, rapor veya dışa aktarma gibi paylaşımlar yalnızca siz "Paylaş"a dokunduğunuzda iOS paylaşım menüsü ile ve sizin seçtiğiniz hedefe gönderilir.</p>
 
-<h2>6. Veri silme</h2>
-<p>Ayarlar &gt; <strong>Verileri Sil</strong> ile uygulamadaki tüm verileri cihazınızdan kalıcı olarak silebilirsiniz; uygulamayı silmek de yerel verileri kaldırır (iCloud yedeklerinizi Apple hesabınızdan yönetebilirsiniz). Sentry veya RevenueCat'te tutulan teknik kayıtların silinmesini aşağıdaki adrese yazarak isteyebilirsiniz; satın alma kayıtları Apple'ın yasal saklama yükümlülüklerine tabidir.</p>
+<h2>7. Veri silme</h2>
+<p>Ayarlar &gt; <strong>Verileri Sil</strong> ile uygulamadaki tüm verileri cihazınızdan kalıcı olarak silebilirsiniz; uygulamayı silmek de yerel verileri kaldırır (iCloud yedeklerinizi Apple hesabınızdan yönetebilirsiniz). Sentry, RevenueCat veya PostHog'da tutulan teknik kayıtların silinmesini aşağıdaki adrese yazarak isteyebilirsiniz; satın alma kayıtları Apple'ın yasal saklama yükümlülüklerine tabidir.</p>
 
-<h2>7. Haklarınız</h2>
+<h2>8. Haklarınız</h2>
 <p>KVKK ve GDPR kapsamındaki erişim, düzeltme, silme ve itiraz haklarınız için bize e-posta ile ulaşabilirsiniz. Hesap sistemimiz olmadığından, cihazınızdaki veriler üzerinde tam kontrol sizdedir.</p>
 
-<h2>8. Çocuklar</h2>
+<h2>9. Çocuklar</h2>
 <p>KaçGün 13 yaş altındaki çocuklara yönelik değildir ve bilerek çocuklardan veri toplamaz.</p>
 
-<h2>9. Değişiklikler ve iletişim</h2>
+<h2>10. Değişiklikler ve iletişim</h2>
 <p>Bu politikayı güncellersek yeni tarihi bu sayfada yayınlarız. İletişim: <a href="mailto:dogac1998@gmail.com">dogac1998@gmail.com</a></p>
 </body></html>
