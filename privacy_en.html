@@ -4,7 +4,7 @@
 <style>body{font-family:-apple-system,system-ui,sans-serif;max-width:760px;margin:0 auto;padding:24px 16px;line-height:1.6;color:#1A1040}h1{font-size:28px}h2{font-size:19px;margin-top:28px}</style>
 </head><body>
 <h1>KaçGün Privacy Policy</h1>
-<p>Last updated: 15 October 2026</p>
+<p>Last updated: 30 October 2026</p>
 
 <h2>1. Summary</h2>
 <ul>
@@ -12,6 +12,7 @@
 <li>Your cards, streaks, journals, notes, to-dos, water logs and <strong>health / period cycle data stay on your device</strong> and are never sent to our servers.</li>
 <li>There is <strong>no advertising</strong> and we do <strong>not track</strong> you across apps or websites.</li>
 <li>We use three third-party services: <strong>Sentry</strong> for crash and performance diagnostics, <strong>RevenueCat</strong> to validate purchases and <strong>PostHog</strong> (EU cloud) for anonymous product analytics. Payments are processed by <strong>Apple</strong>.</li>
+<li>Like any internet service, these providers technically receive your device's IP address when the app connects to them; we do not ask them to store it for profiling, and PostHog is configured not to derive a location from it.</li>
 </ul>
 
 <h2>2. Data stored on your device</h2>
@@ -33,6 +34,7 @@
 <p>To understand which parts of the app are used and to improve it, we use <strong>PostHog</strong> (PostHog Inc.; <strong>EU cloud</strong>, data hosted in the European Union — Frankfurt, Germany) for anonymous product analytics. The sole purpose is <strong>product analytics</strong>; it is not used for advertising, profiling or tracking, and it is never sold.</p>
 <p><strong>Events sent</strong> (only these): app opened; first-use steps (welcome, card type chosen, first card form, first card saved); card created (only the category type, e.g. "smoking", and the app language); check-in saved (only that it was saved); Premium screen viewed (which screen opened it), package selected, purchase started and restore result (lifetime / annual / monthly); language changed (new language code); widget added. Each event includes technical information such as app and iOS version, device type/model, language and time zone.</p>
 <p><strong>Identity:</strong> PostHog creates a random, anonymous ID in the app; it is not linked to your name, email or phone number. For purchase analysis the same anonymous ID is also passed to RevenueCat (see section 5).</p>
+<p>This identifier is stored on your device as a device-scoped ID; it is not the advertising identifier (IDFA).</p>
 <p><strong>Never sent:</strong> card names and titles, journal/note/crisis texts, check-in mood and notes, health and cycle data, personal identifiers, device name, the advertising identifier (IDFA) and location. Session replay, automatic capture of screen touches and IP-based location lookup are disabled.</p>
 <p>Legal basis: legitimate interest in improving the product (GDPR Art. 6(1)(f)). You can send objection and deletion requests to the address in section 10.</p>
 
@@ -44,7 +46,7 @@
 <p>Achievement cards, reports and exports are only shared when you tap "Share", through the iOS share sheet, to the destination you choose.</p>
 
 <h2>7. Deleting your data</h2>
-<p>Settings &gt; <strong>Delete Data</strong> permanently removes all app data from your device; deleting the app also removes local data (manage iCloud backups from your Apple Account). You can ask us to delete technical records held by Sentry, RevenueCat or PostHog by writing to the address below; purchase records are subject to Apple's legal retention obligations.</p>
+<p>Settings &gt; <strong>Delete Data</strong> permanently removes all app data from your device; deleting the app also removes local data (manage iCloud backups from your Apple Account). From version 2.2.0, Delete Data also resets the anonymous analytics identifier, so later events are recorded under a new identifier. You can ask us to delete technical records held by Sentry, RevenueCat or PostHog by writing to the address below; purchase records are subject to Apple's legal retention obligations.</p>
 
 <h2>8. Your rights</h2>
 <p>To exercise your rights of access, correction, deletion and objection under the GDPR and Turkish KVKK, contact us by email. Because there are no accounts, you keep full control of the data on your device.</p>
